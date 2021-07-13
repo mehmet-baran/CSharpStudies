@@ -14,12 +14,14 @@ namespace FirstProject
         public void Setup()
         {
             Driver = new ChromeDriver();
+            Driver.Manage().Window.Maximize();
         }
 
         [Test]
         public void Test1()
         {
             Driver.Navigate().GoToUrl("https://demowf.aspnetawesome.com");
+           
             Assert.Pass();
         }
     }
