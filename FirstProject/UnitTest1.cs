@@ -15,6 +15,7 @@ namespace FirstProject
         {
             Driver = new ChromeDriver();
             Driver.Manage().Window.Maximize();
+            Console.WriteLine("This is setup method");
         }
 
         [Test]
